@@ -1,0 +1,58 @@
+/* Assuming you have a separate CSS file for your component */
+.book-stats-container {
+    background-color: blue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .book-stats-count {
+    margin-bottom: 10px; /* Add some spacing between the count and label */
+  }
+  
+  /* Define styles for radial graphs */
+  .radial-graph {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .radial-graph .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2); /* Adjust border width and color */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .radial-graph .bar {
+    width: 50%; /* Adjust percentage to control the progress */
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff; /* Adjust color of the progress bar */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: left;
+  }
+  
+  /* Add animation for better visualization */
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .radial-graph .bar.animated {
+    animation: animate 1s linear forwards;
+  }
+  

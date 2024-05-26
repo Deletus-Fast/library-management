@@ -1,0 +1,48 @@
+.radial-graph-container {
+    text-align: center;
+  }
+  
+  .radial-graph {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .radial-graph .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.1); /* Adjust border width and color */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .radial-graph .bar {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4CAF50; /* Adjust color of the progress bar */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: left;
+  }
+  
+  /* Add animation for better visualization */
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .radial-graph .bar.animated {
+    animation: animate 1s linear forwards;
+  }
+  

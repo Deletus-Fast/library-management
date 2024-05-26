@@ -1,0 +1,127 @@
+/* Admin Dashboard Styles */
+.dashboard {
+  background-color: #eff7ff;
+  height: 100vh; /* Adjusted height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px; /* Adjust the top padding to align with the "Welcome" message */
+}
+
+.member-profile-content,
+.member-activebooks-content,
+.member-reservedbooks-content,
+.member-history-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  overflow-y: hidden; /* Add this line */
+
+}
+
+.user-welcome {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.member-dashboard-heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add margin-bottom for spacing */
+  color: #333;
+}
+
+.activebooks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.activebooks-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add margin-bottom for spacing */
+  color: #333;
+}
+
+.activebooks-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%; /* Adjust the width of the table */
+  margin-top: 10px; /* Add margin-top for spacing */
+  overflow-y: hidden; /* Add this line */
+}
+
+.activebooks-table td,
+.activebooks-table th {
+  border: 1px solid #eeeded;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.activebooks-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(24, 33, 62);
+  color: white;
+}
+
+.dashboard-option-content {
+  display: flex;
+  flex-direction: column;
+  flex: 0.75;
+  width: 90vw;
+  overflow-y: scroll;
+  background-color: white;
+  height: 90vh;
+  margin-right: 20px;
+  margin-top: 100px;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  margin-left: 220px; /* Adjust for sidebar width */
+  padding: 1px 16px;
+  height: 1000px;
+}
+/* .member-dashboard-content{
+  margin-top: 50px;
+} */
+
+@media screen and (max-width: 700px) {
+  .content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .user-details-topbar {
+    flex-direction: column;
+  }
+
+  .user-details-specific {
+    flex-direction: column;
+  }
+
+  .specific-left,
+  .specific-right {
+    width: 100%;
+    margin: 20px auto;
+  }
+}

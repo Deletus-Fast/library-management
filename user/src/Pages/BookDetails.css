@@ -1,0 +1,211 @@
+.book-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* background-color: #eff7ff; */
+  width: 100%;
+  /* height: 100%; */
+  min-height: 100vh;
+  background-size: cover;
+  background-image: url('../bg1.svg');
+  /* background-size: cover; */
+  background-repeat: repeat-y;
+  
+}
+
+.book-details {
+  width: 80%;
+  max-width: 900px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.book-details img {
+  width: 220px;
+  max-width: 100%;
+  height: 330px;
+  border-radius: 10px;
+}
+
+.available {
+  color: green;
+}
+
+.issued {
+  color: red;
+}
+
+.book-info-container {
+  display: flex;
+}
+
+.book-info-right {
+  margin-left: 20px;
+  /* Added margin between image and book info */
+  flex-grow: 1;
+  /* Added to let the book info fill remaining space */
+}
+
+.book-title {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.book-author {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.book-info {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.book-status {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+.summarize-button {
+  background-color: #3671af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+
+  transition: background-color 0.3s ease;
+}
+
+
+.summarize-button .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.summarize-button:hover {
+  background-color: #5d87b4;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  position: relative;
+  /* Add relative positioning */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  /* Adjusted position to move the button slightly down */
+  right: 10px;
+  /* Adjusted position to move the button slightly left */
+  background-color: transparent;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.comments-section {
+  margin-top: 20px;
+}
+
+.comments-section h3 {
+  margin-top: 10px;
+  /* Corrected margin */
+  margin-bottom: 5px;
+}
+
+.comments-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments-section ul li {
+  margin-bottom: 5px;
+}
+
+.comments-section textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.comments-section button {
+  background-color: #3671af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comments-section button:hover {
+  background-color: #5d87b4;
+}
+
+h3.comments_h3 {
+  margin-top: 10px;
+  /* Corrected margin */
+}
+
+.input-form1 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.input-form1 input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.input-form1 button {
+  padding: 10px 20px;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background-color: #3671af;
+  color: #fff;
+  cursor: pointer;
+}

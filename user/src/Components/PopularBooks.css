@@ -1,0 +1,93 @@
+.popularbooks-container {
+    overflow: hidden;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .popularbooks {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%; /* Make sure this fills its container */
+      position: relative;
+  }
+  
+  .popularbook-images-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+      width: 80%; /* Adjust based on the available space */
+      margin: 0 20px;
+  }
+  
+  .popularbook-images {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: start;
+      min-width: 100%; /* Ensure this takes up at least the space of its container */
+  }
+  
+  .popular-book {
+      flex: 0 0 auto;
+      width: 150px;
+      height: auto;
+      margin: 0 10px;
+      border-radius: 5px;
+  }
+  
+  .scroll-button {
+      cursor: pointer;
+      border: none;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      padding: 10px;
+      font-size: 24px;
+      user-select: none;
+      z-index: 10;
+  }
+  .popularbooks {
+      position: relative;
+    }
+    
+    .scroll-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s ease;
+    }
+    
+    .scroll-button:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .left-arrow {
+      left: 10px;
+    }
+    
+    .right-arrow {
+      right: 10px;
+    }
+    
+  .scroll-button:hover {
+      background: rgba(0,0,0,0.8);
+  }
+  
+  .popularbook-images::-webkit-scrollbar {
+      display: none;
+  }
+  
+  .popularbook-images {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }

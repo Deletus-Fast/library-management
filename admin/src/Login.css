@@ -1,0 +1,70 @@
+/* Login.css */
+
+/* Login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login form container */
+.login-form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Form title */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input field label */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input field */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Submit button hover effect */
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

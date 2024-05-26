@@ -1,0 +1,39 @@
+.all-users-container .user-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .all-users-container .user-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .all-users-container .user-id {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  
+  .all-users-container .user-issued-books {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  
+  .all-users-container .page-title {
+    margin-bottom: 20px;
+  }
+  
+  .main-content_Users {
+    margin-left: 260px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  

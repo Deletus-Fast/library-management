@@ -1,0 +1,75 @@
+.all-users-container .user-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 10px;
+    border-width: 10px;
+    border-color: black;
+}
+
+.all-users-container .user-info {
+    flex: 1;
+}
+
+.all-users-container .user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.all-users-container .action-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.all-users-container .activate-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.all-users-container .block-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.all-users-container .report-button {
+    background-color: #2196f3;
+    color: white;
+}
+
+.all-users-container .user-name {
+    font-weight: bold;
+}
+
+.all-users-container .user-issued-books {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.all-users-container .page-title {
+    margin-bottom: 20px;
+}
+
+.main-content_Users {
+    margin-left: 260px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.all-users-container .user-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-users-container .user-issued-books {
+    margin-top: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 20px;
+}

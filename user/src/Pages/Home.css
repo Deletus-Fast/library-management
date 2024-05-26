@@ -1,0 +1,68 @@
+#home{
+    overflow-y: auto;
+
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Ensure the popup is above other content */
+}
+
+.popup.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    max-width: 400px;
+    width: 80%;
+}
+
+.popup-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.book-card {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.book-card:last-child {
+    border-bottom: none; /* Remove border for the last book card */
+}
+
+.book-name {
+    font-weight: bold;
+}
+
+.due-date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.popup-button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Add some space between the book cards and the button */
+}
+
+.popup-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

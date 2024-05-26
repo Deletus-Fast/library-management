@@ -1,0 +1,50 @@
+.slider {
+    position: relative; /* Add position relative to the slider container */
+    width: 100%;
+    height: auto;
+}
+
+.search-input {
+    font-family: Arial, sans-serif;
+    position: absolute; /* Position the search bar relative to the slider */
+    top: 20%; /* Place the search bar at the vertical center */
+    left: 50%; /* Place the search bar at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the search bar */
+    z-index: 1; /* Ensure search bar is above the images */
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Limit maximum width */
+    height: 40px;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.search-button1 {
+    position: absolute; /* Position the search button relative to the slider */
+    top: 50%; /* Place the button at the vertical center */
+    left: 85%; /* Adjust left position as needed */
+    transform: translate(-244%, -425%);; /* Center the button vertically */
+    z-index: 2; /* Ensure button is above the search bar */
+    width: 100px; /* Adjust width as needed */
+    height: 40px;
+    font-size: 18px;
+    background-color: #007bff; /* Change button background color */
+    color: white; /* Change button text color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+img {
+    width: auto;
+    height: 600px;
+}
+
+/* Mobile View */
+@media screen and (max-width:768px) {
+    img {
+        height: 250px;
+    }
+}

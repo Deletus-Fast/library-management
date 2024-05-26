@@ -1,0 +1,253 @@
+/* Sidebar Menu */
+#sidebar-menu {
+    width: 250px;
+    background: #34495e;
+    /* Updated color */
+    color: #fff;
+    transition: width 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Main Menu Section */
+/* .menu_section {
+    /* margin-top: 20px; */
+
+/* } */
+
+.menu_section h3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+}
+
+
+
+/* Side Menu */
+.side-menu {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 100px;
+}
+
+.side-menu li {
+    /* margin-bottom: 10px; */
+    padding: 10 15px;
+
+}
+
+
+
+/* Button Styles */
+.side-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    color: #fff;
+    transition: background 0.3s ease;
+    /* Smooth transition */
+}
+
+.side-menu button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Submenu Styles */
+.nav.child_menu {
+    display: none;
+    list-style: none;
+    padding-left: 0;
+    transition: max-height 0.3s ease;
+    /* Smooth transition */
+    overflow: hidden;
+}
+
+.nav.child_menu.open {
+    display: block;
+    max-height: 200px;
+    /* Adjust the height as needed */
+}
+
+.nav.child_menu li {
+    margin-bottom: 3px;
+}
+
+/* Icon Styles */
+.side-menu button i {
+    margin-right: 10px;
+}
+
+/* Chevron Down Icon */
+.side-menu button .fa-chevron-down {
+    float: right;
+}
+
+/* Active Button Styles */
+.side-menu button.active {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* LMS Admin Title */
+#sidebar-menu .lms-admin-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Welcome Text */
+#sidebar-menu .welcome-text {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+
+.nav.child_menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.nav.child_menu.open {
+    max-height: 500px;
+    /* Adjust height as needed */
+}
+
+
+/* Update the styling for submenu list items */
+.nav.child_menu li {
+    list-style: none;
+    /* Remove the default list-style */
+}
+
+/* Update the styling for submenu links */
+.nav.child_menu li a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #fff;
+    /* Set text color to white */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    font-size: 12px;
+    /* Set smaller font size */
+    text-align: center;
+    /* Center-align text */
+    display: block;
+    /* Display block */
+    padding: 10px 15px;
+    /* Add padding */
+}
+
+/* Add hover effect to submenu links */
+.nav.child_menu li a:hover {
+    color: #ffd700;
+    /* Change text color on hover */
+}
+
+#sidebar-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    /* Set the width of the sidebar */
+}
+
+.menu_section {
+    height: 100%;
+    /* Ensure the menu section spans the entire height */
+    display: flex;
+    flex-direction: column;
+}
+
+.lms-admin-title {
+    color: #fff;
+    /* Set color for LMS Admin title */
+    text-align: center;
+    /* Center align the title */
+}
+
+.welcome-text {
+    color: #fff;
+    /* Set color for welcome text */
+    padding: 10px 20px;
+    /* Add padding for welcome text */
+    text-align: center;
+    /* Center align the welcome text */
+}
+
+.nav.side-menu {
+    flex: 1;
+    /* Allow the menu to expand to occupy remaining space */
+    overflow-y: auto;
+    /* Enable vertical scrolling for menu */
+}
+
+.menu-option {
+    padding: 0px 20px;
+    /* Add padding for menu options */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    color: #fff;
+    /* Set color for menu options */
+    text-decoration: none;
+    /* Remove underline from menu options */
+    
+    
+}
+
+.menu-option.selected {
+    background: #34495e;
+
+}
+
+.menu-option a{
+    color: #fff;
+    /* Set color for menu options */
+    text-decoration: none;
+    /* Remove underline from menu options */
+
+}
+
+.menu-option:hover {
+    background: #395067;
+
+}
+span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+
+}
+
+.sidebar-footer{
+    position: absolute;
+    bottom: 10px;
+    width: 84%;
+    padding: 10px 20px;
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.sidebar-footer button{
+    width: 100px;
+
+}
+
+img{
+    width: 115.8px;
+    height: 100px;
+    border-radius: 50%;
+    /* margin-right: 10px; */
+    margin: auto;
+    /* margin-left: 25px; */
+    padding-top: 20px;
+}
+

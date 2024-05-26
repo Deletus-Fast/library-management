@@ -1,0 +1,46 @@
+.issue-book-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 60px;
+    /* Adjusted margin to accommodate header */
+  }
+  
+  .issue-book-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .issue-book-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .issue-book-container label {
+    margin-bottom: 10px;
+  }
+  
+  .issue-book-container input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  .issue-book-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    align-self: center;
+  }
+  
+  .issue-book-container button:hover {
+    background-color: #0056b3;
+  }
